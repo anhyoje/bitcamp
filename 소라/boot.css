@@ -1,0 +1,349 @@
+@import url('reset.css');
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+body{
+    font-family: 'Pretendard-Regular';
+    height: 100%;
+    width: 100%;
+    max-width: 1300px;
+    min-width: 500px;
+    margin:0 auto;
+    line-height: 130%;
+}
+.header{
+    padding: 0px 0px 5px 0px;
+    max-width: 1300px;
+    min-width: 500px;
+    margin:0 auto;
+}
+.nav-sort{
+    align-content: flex-end;
+    align-items: flex-end;
+    padding-right: 10px;
+}
+.search_before{
+    color: #ffffff80;
+    padding-right: 13px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.header_search_after{
+    position: absolute;
+    top: 22px;
+    display: none;
+    align-items: center;
+    right: 13%;
+    height: 33px;
+    max-width: 220px;
+    width: 100%;
+    background-color: white;
+    border-radius: 2px;
+}
+.header_search_after i{
+    color: black;
+    padding: 7px;
+}
+.header_search_after input{
+    border: none;
+    width: 160px;
+    outline: none;
+}
+.header_search_x{
+    border: black 1px;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 768px){
+    .header_search_after{
+        right: 10%;
+    }
+}
+
+
+/* ----------메인 이미지 */
+.middle > img{
+    position: relative;
+}
+
+.middle,.middle > img{
+    max-width: 1300px;
+    min-width: 500px;
+    max-height: 600px;
+    width: 100%;
+}
+.middle_txt{
+    color: white;
+    max-width: 510px;
+    line-height: 140%;
+    
+}
+.middle_clickinfo{
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) { 
+    .middle_txt{
+        position:absolute;
+        top: 10%;
+        margin:0 10%;
+    }
+    .bottom_img div{
+        position: relative;
+    }
+    .noshow{
+        display: none;
+    }
+    .show{
+        margin: 5px;
+    } 
+    .middle_clickinfo{
+        position: absolute;
+    }
+    .picklepick{
+        width: 40px; 
+        height: auto;
+        position: absolute;
+        top: 1%;
+        right: 1%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .middle_txt{
+        position:absolute;
+        top: 15%;
+        margin:0 10%;
+    }
+    .bottom_img div{
+        display: inline;
+        margin: 7px;
+        position: relative;
+    }
+    .middel_txt_text{
+        display: grid;
+    }
+    .picklepick{
+        width: 60px; 
+        height: auto;
+        position: absolute;
+        top: 1%;
+        right: 1%;
+    }
+
+    
+}
+
+.bottom_img{
+    display: flex;
+    justify-content: space-between;
+    /* padding-top: 10px; */
+    height: auto;
+    width: 100%;
+}
+
+.bottom{
+    padding-top: 20px;
+    margin: 0px 10px 0px 10px;
+}
+
+.bottom_img div img:nth-child(1){
+    height: auto;
+    width: 100%;
+    border-radius: 6px;
+} 
+
+.bottom_img div img,.bottom_img div p, #top_header_right1_info ul li{
+    cursor: pointer;
+}
+
+/* ======추천 영화 하단 폰트 ====== */
+.bottom_title p{
+    font-weight: 900;
+    font-size: 16px;
+    color: white;
+}
+.bottom_img div p:nth-child(2){
+    font-weight: 600;
+    font-size: 14px;
+    /* padding-top: 3px; */
+    margin-bottom: 0;
+    color: white;
+}
+.bottom_img div p:nth-child(3){
+    font-weight: 300;
+    font-size: 14px;
+    /* padding-top: 3px; */
+    margin-bottom: 0;
+    color: white;
+}
+.bottom_img div p:nth-child(4){
+    font-weight: 300;
+    font-size: 14px;
+    color: rgb(1, 156, 1);
+    margin-bottom: 0;
+    /* padding-top: 3px; */
+}
+
+
+
+/* =============풋터============ */
+@media screen and (max-width: 768px) { 
+    footer{
+        height: 58px;
+    }
+    .footer_div{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .footertext{
+        line-height: 90%;
+    }
+}
+
+@media screen and (min-width: 768px) { 
+    footer{
+        height: 83px;
+        display: flex;
+        justify-content: center ;
+
+        
+        /* padding: 0px px 0px 100px; */
+    }
+    .footer_div{
+        width: 70%;
+        display: flex;
+        align-items: center;
+    }
+    .footertext{
+        line-height: 100%;
+    }
+}
+
+footer{
+    background-color: rgb(3,7,8);
+    width: 100%;
+    margin-top: 20px;   
+    display: flex;
+    align-items: center;
+    min-width: 500px;
+
+}
+
+.footerimg{
+    /* left: 10%; */
+    display: flex;
+    /* vertical-align: center; */
+    width: auto;
+    height: 50px;
+}
+.footertext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8333333333333334vw;
+    width: 100%;
+}
+.footertext span{
+    color: rgb(93,96,96);
+}
+.footertext span:nth-child(1){
+    font-weight: 800;
+    font-size: 1vw;
+}
+.instaricon{
+    display: flex;
+}
+.instaricon i{
+    margin: 0px 6px 0px 6px;
+}
+
+/* -------카테고리------- */
+@media screen and (max-width: 768px) { 
+    body{
+        position: relative;
+    }
+    .category{
+        width: 100%;
+        min-width: 500px;
+        height: 100%;
+        background-color: rgba(3,7,8,0.95);
+        position: absolute;
+        top: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+    .category ul{
+        position: absolute;
+        top: 10%;
+    }
+    .category ul li{
+        list-style: none;
+        color: rgb(121,121,121);
+        line-height: 330%;
+        cursor: pointer;
+    }
+    .collapse{
+        display: block;
+    }
+}
+@media screen and (min-width: 768px) { 
+    body{
+        position: relative;
+    }
+    .category{
+        width: 100%;
+        max-width: 300px;
+        height: 100%;
+        background-color: rgba(3,7,8,0.95);
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+    .category ul{
+        position: fixed;
+        top: 10%;
+        text-align: right;
+    }
+    .category ul li{
+        list-style: none;
+        color: rgb(121,121,121);
+        line-height: 330%;
+        cursor: pointer;
+    }
+    .collapse{
+        display: block;
+    }
+}
+
+
+/* 부트스트랩 고치기... */
+@media (min-width: 992px){
+    .container, .container-sm, .container-md, .container-lg {
+        max-width: 1050px;
+    }
+}
+@media (min-width: 768px){
+    .container, .container-sm, .container-md {
+        max-width: 1200px;
+    }
+}
+@media (min-width: 576px){
+    .container, .container-sm {
+        max-width: 1200px;
+    }
+}
+
+/*  */
